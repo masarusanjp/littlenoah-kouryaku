@@ -15,6 +15,10 @@ class FeverSchedule
   def next_period_from(time)
     @periods.find {|n| time <= n}
   end
+  
+  def fever?(t)
+    @periods.any? {|n| t == n}
+  end
 
   def self.today
     self.new(Time.now.wday)
