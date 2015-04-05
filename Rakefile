@@ -1,7 +1,7 @@
 #!/usr/bin/env rake
 
 $:.unshift(File.expand_path(File.dirname(__FILE__) + '/lib'))
-require 'littlenoah'
+require 'littlenoah/job/fevertime_notifier'
 
 require 'rake'
 require 'rspec/core/rake_task'

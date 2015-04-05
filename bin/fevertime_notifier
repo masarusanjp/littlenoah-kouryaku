@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$:.unshift(File.expand_path(File.dirname(__FILE__) + '/../lib'))
+
+require 'littlenoah/job/fevertime_notifier'
+
+Littlenoah::Job::FevertimeNotifier.new({
+  notify_to: ARGV[0],
+  consumer_key: ARGV[1],
+  consumer_secret: ARGV[2],
+  access_token: ARGV[3],
+  access_secret: ARGV[4]
+}).run

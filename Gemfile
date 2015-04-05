@@ -4,6 +4,7 @@ gem 'rake'
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'nokogiri'
+gem 'twitter'
 
 group :development, :test do
   gem 'rspec'
