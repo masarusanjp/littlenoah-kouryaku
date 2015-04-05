@@ -29,7 +29,6 @@ module Job
     end
 
     def should_notify?(time)
-      return true
       schedule(time.mday).fever?(time.hour)
     end
 
