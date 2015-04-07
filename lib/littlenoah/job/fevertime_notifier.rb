@@ -29,11 +29,11 @@ module Job
     end
 
     def should_notify?(time)
-      schedule(time.mday).fever?(time.hour)
+      schedule(time.wday).fever?(time.hour)
     end
 
-    def schedule(mday)
-      Littlenoah::FeverSchedule.new(mday)
+    def schedule(wday)
+      Littlenoah::FeverSchedule.new(wday)
     end
 
     def twitter
